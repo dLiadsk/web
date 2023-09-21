@@ -1,0 +1,80 @@
+.sidebar {
+    border: 2px solid red;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    height: 200px;
+    width: 150px;
+    text-align: left;
+}
+
+.main {
+    display: flex;
+    align-items: flex-start;
+}
+
+.head {
+    display: inline-block;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+.body {
+    padding-left: 20px;
+}
+
+.content {
+    height: 500px;
+    border: 2px solid red;
+    padding-right: 30px;
+}
+
+
+.div {
+    border: 2px solid red;
+
+}
+
+.text {
+    color: red;
+    text-align: -moz-center;
+}
+
+.hover {
+    color: brown;
+    text-decoration: none;
+}
+
+.hover:hover {
+    color: black;
+}
+
+.img {
+    width: 150px;
+    height: 150px;
+    float: left;
+    box-shadow: 2px 2px gold;
+    border-radius: 30px;
+    position: relative;
+    left: 20px;
+    margin: 20px;
+}
+
+.img:hover {
+    width: 200px;
+    height: 200px;
+}
+
+.caption {
+    text-transform: uppercase;
+    color: white
+}
+
+p{
+    color: white;
+    padding-left: 20px;
+}
+
+
+
+
+
