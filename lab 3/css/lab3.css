@@ -1,0 +1,167 @@
+/* Стилі для заголовка і навігації в хедері */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1vw;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Стилі для контенту */
+main {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 1vw;
+}
+
+
+.recipes_news {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+}
+
+.recipes {
+    width: 25%;
+    border-right: 1px solid #000;
+}
+
+.recipes ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.recipes li {
+    margin-bottom: 0.5vw;
+}
+
+.recipes a {
+    text-decoration: none;
+    color: green;
+}
+
+.recipes a:hover {
+    color: darkgreen;
+}
+
+.news {
+    width: 100%;
+    margin-left: 1vw;
+    text-align: center;
+}
+
+.image-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.image-row img {
+    max-width: 20vw;
+    max-height: 20vw;
+    padding: 1vw;
+}
+
+section {
+    margin-bottom: 1.5vw;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1vw;
+    text-align: center;
+}
+
+.footer-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5vw;
+    font-size: 2vw;
+
+}
+
+.footer-icons p {
+    color: white;
+    text-decoration: none;
+    display: inline;
+    margin: 0 0.5vw;
+}
+
+.footer-icons a:hover {
+    color: #00bcd4; /* Змініть колір при наведенні на іконки, як вам потрібно */
+}
+
+.menu-item {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: moveMenu 3.5s ease-in-out infinite;
+}
+
+.menu-item img {
+    width: 3vw;
+    height: 3vw;
+}
+
+@keyframes moveMenu {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20vw);
+    }
+}
+
+
+.masterpiece {
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .image-row {
+        flex-direction: column;
+        font-size: 2vw;
+    }
+
+    nav ul li a, .recipes a, .masterpiece p {
+        font-size: 2vw;
+    }
+
+    .recipes h3, .news h3, .masterpiece h2 {
+        font-size: 3vw;
+    }
+
+    .recipes {
+        width: 30%;
+    }
+
+    .recipes li {
+        margin-bottom: 0;
+    }
+}
