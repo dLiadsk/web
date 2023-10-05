@@ -1,0 +1,100 @@
+.center-div {
+    text-align: center; /* Вирівнюємо текст по центру */
+    margin-top: 50vh; /* Вирівнюємо вертикально по центру */
+    transform: translateY(-50%); /* Вирівнюємо по вертикалі */
+}
+
+.menu-item {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: moveMenu 6.5s ease-in-out infinite;
+}
+
+.menu-item img {
+    width: 3vw;
+    height: 3vw;
+
+}
+
+.menu img{
+    height: 3vw;
+    width: 3vw;
+}
+.menu td, th{
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+@keyframes moveMenu {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(45vw);
+    }
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+}
+
+.question-answer {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+
+}
+
+@media (max-width: 845px) {
+    .menu-item {
+        margin-bottom: 25vw;
+        animation: moveMenu 3.5s ease-in-out infinite;
+    }
+
+    .menu-item img {
+        max-width: 10vw;
+        height: 10vw;
+    }
+
+    .header-nav{
+        display: flex;
+        align-items: center;
+        align-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .question-answer {
+        border: 1px solid #ddd;
+        padding: 15px;
+        margin-bottom: 35px;
+        border-radius: 5px;
+
+    }
+
+    .menu img{
+        height: 12vw;
+        width: 12vw;
+    }
+
+
+    @keyframes moveMenu {
+        0%, 100% {
+            transform: translateX(0);
+        }
+        50% {
+            transform: translateX(90vw);
+        }
+    }
+}
