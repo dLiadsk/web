@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        #chat-container {
+            width: 400px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        #messages {
+            height: 200px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+        .message {
+            margin: 5px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .user1 {
+            text-align: right;
+            background-color: #e0e0e0;
+        }
+        .user2 {
+            text-align: left;
+            background-color: #f0f0f0;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  
+  <body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card">
+                    <div class="card-header">
+                        Чат
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="user1-input">USER1:</label>
+                                    <input type="text" class="form-control" id="user1-input" placeholder="Введіть повідомлення для USER1">
+                                </div>
+                                <button class="btn btn-primary" onclick="sendMessage('user1')">Відправити USER1</button>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="user2-input">USER2:</label>
+                                    <input type="text" class="form-control" id="user2-input" placeholder="Введіть повідомлення для USER2">
+                                </div>
+                                <button class="btn btn-primary" onclick="sendMessage('user2')">Відправити USER2</button>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12">
+                                <div class="messages" id="messages"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/task2.js"></script>
+  </body>
+</html>
